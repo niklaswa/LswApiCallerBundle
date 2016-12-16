@@ -9,6 +9,10 @@
         {
             "name": "Maurits van der Schee",
             "email": "m.vanderschee@leaseweb.com"
+        },
+        {
+            "name": "Niklas",
+            "email": "git@niklas.top"
         }
     ],
     "minimum-stability": "dev",
