@@ -62,7 +62,7 @@ class ApiCallLogger implements ApiCallLoggerInterface
         $type = $this->calls[$this->currentCall]['type'];
         $url = $this->calls[$this->currentCall]['url'];
         $requestData = $this->calls[$this->currentCall]['requestData'];
-        if(is_array($requestData)) {#
+        if(is_array($requestData) || is_object($requestData)) {#
             $requestData = json_encode($requestData);
         }
         $responseDataLength = strlen($responseData);
