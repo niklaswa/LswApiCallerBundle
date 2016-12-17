@@ -57,8 +57,8 @@
                         <strong>URL</strong>: {{ call.url }}<br />
                         <strong>Type</strong>: {{ call.type }}<br />
                         <strong>Request</strong>: {{ call.requestData|length }} bytes
-                          <a href="data:text/plain;,{{ call.requestData|url_encode(true) }}">raw</a>
-                          <a href="data:text/html;,{{ call.requestData|url_encode(true) }}">html</a>
+                          <a href="data:text/plain;,{{ call.requestData|dump }}">raw</a>
+                          <a href="data:text/html;,{{ call.requestData|dump }}">html</a>
                           <a href="data:text/plain;,{{ call.requestObject|url_encode(true) }}">parsed</a>
                           <br />
                         <strong>Response</strong>: {{ call.responseData|length }} bytes
