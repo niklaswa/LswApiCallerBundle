@@ -57,14 +57,14 @@
                         <strong>URL</strong>: {{ call.url }}<br />
                         <strong>Type</strong>: {{ call.type }}<br />
                         <strong>Request</strong>: {{ call.requestData|length }} bytes
-                          <a href="data:text/plain;,{{ call.requestData|dump }}">raw</a>
-                          <a href="data:text/html;,{{ call.requestData|dump }}">html</a>
-                          <a href="data:text/plain;,{{ call.requestObject|url_encode(true) }}">parsed</a>
+                          <a href="data:text/plain;,{{ dump(call.requestData) }}">raw</a>
+                          <a href="data:text/html;,{{ dump(call.requestData) }}">html</a>
+                          <a href="data:text/plain;,{{ dump(call.requestObject) }}">parsed</a>
                           <br />
                         <strong>Response</strong>: {{ call.responseData|length }} bytes
-                          <a href="data:text/plain;,{{ call.responseData|url_encode(true) }}">raw</a>
-                          <a href="data:text/html;,{{ call.responseData|url_encode(true) }}">html</a>
-                          <a href="data:text/plain;,{{ call.responseObject|url_encode(true) }}">parsed</a>
+                          <a href="data:text/plain;,{{ dump(call.responseData) }}">raw</a>
+                          <a href="data:text/html;,{{ dump(call.responseData) }}">html</a>
+                          <a href="data:text/plain;,{{ dump(call.responseObject) }}">parsed</a>
                           <br />
                     </div>
                     <small>
